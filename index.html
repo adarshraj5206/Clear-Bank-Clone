@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear.bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <!-- nav -->
+        <nav class="px-4 md:px-14 py-4 bg-white shadow-sm">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <img class="w-full max-w-[120px] md:max-w-[150px] lg:max-w-[180px] py-[15px] md:py-[25px]" 
+                     src="logo.svg" 
+                     alt="Logo">
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-2xl p-2 rounded-lg hover:bg-gray-100" id="menuButton">
+                    <i class="ri-menu-line"></i>
+                </button>
+        
+                <!-- Navigation Links - Moved inside the main container -->
+                <div class="links hidden md:flex items-center gap-6 lg:gap-10 text-lg lg:text-xl font-[SansDisplayRegular]">
+                    <a href="#" class="hover:text-gray-600">Products</a>
+                    <a href="#" class="hover:text-gray-600">Use Cases</a>
+                    <a href="#" class="hover:text-gray-600">About</a>
+                    <a href="#" class="hover:text-gray-600">Learn</a>
+                    <button class="bg-[#70f1da] text-black px-6 py-2.5 rounded-full hover:bg-black hover:text-white">
+                        Begin <i class="ri-arrow-right-line ml-1"></i>
+                    </button>
+                </div>
+            </div>
+        
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden absolute left-0 w-full bg-white shadow-xl border-t">
+                <div class="flex flex-col p-6 space-y-4">
+                    <a href="#" class="hover:text-gray-600">Products</a>
+                    <a href="#" class="hover:text-gray-600">Use Cases</a>
+                    <a href="#" class="hover:text-gray-600">About</a>
+                    <a href="#" class="hover:text-gray-600">Learn</a>
+                    <button class="bg-[#70f1da] text-black px-6 py-2.5 rounded-full hover:bg-black hover:text-white w-full">
+                        Begin <i class="ri-arrow-right-line ml-1"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero section -->
+        <section class="px-4 sm:px-14 flex justify-between items-end mt-32 sm:mt-28 font-[SansDisplayRegular]">
+            <div class="text-4xl sm:text-6xl md:text-8xl leading-[40px] sm:leading-[65px] md:leading-[85px] font-normal tracking-tighter">
+              <h1>Innovate.</h1>
+              <h1>Differentiate.</h1>
+              <h1>Grow.</h1>
+            </div>
+            <button class="bg-black text-white text-lg sm:text-xl px-5 sm:px-7 py-2 sm:py-3 rounded-full hover:bg-[#70f1da] hover:text-black hover:border-none">
+              Begin
+              <i class="ri-arrow-right-line"></i>
+            </button>
+        </section>
+          
+        <video src="https://clear.bank/uploads/assets/CB_Homepage_H264_3-1_v03.mp4" class="w-full max-h-[300px] sm:max-h-[450px] md:max-h-[597px] rounded-t-[20px] sm:rounded-t-[30px] md:rounded-t-[40px] mt-4 sm:mt-6 md:mt-8" autoplay loop muted></video>
+         
+        <!-- scroller -->
+        <div class="relative overflow-hidden w-full  py-4">
+            <div class="Xscroller flex gap-6 flex-nowrap px-4 md:px-10 py-2">
+              <div class="logo-container flex gap-6">
+                <!-- Original Set of Logos -->
+                <div class="shrink-0 w-24 h-24 md:w-32 md:h-32 bg-white flex items-center justify-center rounded-lg ">
+                  <img class="w-[70px] h-[70px] md:w-[110px] md:h-[110px]" src="https://clear.bank/uploads/Logos/Paypoint-2.svg" alt="Paypoint">
+                </div>
+                <div class="shrink-0 w-24 h-24 md:w-32 md:h-32 bg-white flex items-center justify-center rounded-lg ">
+                  <img class="w-[70px] h-[70px] md:w-[110px] md:h-[110px]" src="https://clear.bank/uploads/Logos/eToro.svg" alt="eToro">
+                </div>
+                <div class="shrink-0 w-24 h-24 md:w-32 md:h-32 bg-white flex items-center justify-center rounded-lg ">
+                  <img class="w-[70px] h-[70px] md:w-[110px] md:h-[110px]" src="https://clear.bank/uploads/Logos/Chip.svg" alt="Chip">
+                </div>
+                <div class="shrink-0 w-24 h-24 md:w-32 md:h-32 bg-white flex items-center justify-center rounded-lg ">
+                  <img class="w-[70px] h-[70px] md:w-[110px] md:h-[110px]" src="https://clear.bank/uploads/Logos/Allica-Bank-Logo-V2.svg" alt="Allica Bank">
+                </div>
+                <div class="shrink-0 w-24 h-24 md:w-32 md:h-32 bg-white flex items-center justify-center rounded-lg ">
+                  <img class="w-[70px] h-[70px] md:w-[110px] md:h-[110px]" src="https://clear.bank/uploads/Logos/TrueLayer-Logo.svg" alt="TrueLayer">
+                </div>
+                <div class="shrink-0 w-24 h-24 md:w-32 md:h-32 bg-white flex items-center justify-center rounded-lg ">
+                  <img class="w-[70px] h-[70px] md:w-[110px] md:h-[110px]" src="https://clear.bank/uploads/Logos/Wealthify-Logo.svg" alt="Wealthify">
+                </div>
+                <div class="shrink-0 w-24 h-24 md:w-32 md:h-32 bg-white flex items-center justify-center rounded-lg ">
+                  <img class="w-[50px] h-[70px] md:w-[70px] md:h-[110px]" src="https://clear.bank/uploads/Logos/Tide_2022-05-23-154717_ibot.svg" alt="Tide">
+                </div>
+                <div class="shrink-0 w-24 h-24 md:w-32 md:h-32 bg-white flex items-center justify-center rounded-lg ">
+                  <img class="w-[70px] h-[70px] md:w-[110px] md:h-[110px]" src="https://clear.bank/uploads/Logos/Coinbase-2.svg" alt="Coinbase">
+                </div>
+              </div>
+          
+              <!-- Duplicate Set for Seamless Loop -->
+              <div class="logo-container flex gap-6">
+                <div class="shrink-0 w-24 h-24 md:w-32 md:h-32 bg-white flex items-center justify-center rounded-lg ">
+                  <img class="w-[70px] h-[70px] md:w-[110px] md:h-[110px]" src="https://clear.bank/uploads/Logos/Paypoint-2.svg" alt="Paypoint">
+                </div>
+                <div class="shrink-0 w-24 h-24 md:w-32 md:h-32 bg-white flex items-center justify-center rounded-lg ">
+                  <img class="w-[70px] h-[70px] md:w-[110px] md:h-[110px]" src="https://clear.bank/uploads/Logos/eToro.svg" alt="eToro">
+                </div>
+                <div class="shrink-0 w-24 h-24 md:w-32 md:h-32 bg-white flex items-center justify-center rounded-lg ">
+                  <img class="w-[70px] h-[70px] md:w-[110px] md:h-[110px]" src="https://clear.bank/uploads/Logos/Chip.svg" alt="Chip">
+                </div>
+                <div class="shrink-0 w-24 h-24 md:w-32 md:h-32 bg-white flex items-center justify-center rounded-lg">
+                  <img class="w-[70px] h-[70px] md:w-[110px] md:h-[110px]" src="https://clear.bank/uploads/Logos/Allica-Bank-Logo-V2.svg" alt="Allica Bank">
+                </div>
+                <div class="shrink-0 w-24 h-24 md:w-32 md:h-32 bg-white flex items-center justify-center rounded-lg">
+                  <img class="w-[70px] h-[70px] md:w-[110px] md:h-[110px]" src="https://clear.bank/uploads/Logos/TrueLayer-Logo.svg" alt="TrueLayer">
+                </div>
+                <div class="shrink-0 w-24 h-24 md:w-32 md:h-32 bg-white flex items-center justify-center rounded-lg ">
+                  <img class="w-[70px] h-[70px] md:w-[110px] md:h-[110px]" src="https://clear.bank/uploads/Logos/Wealthify-Logo.svg" alt="Wealthify">
+                </div>
+                <div class="shrink-0 w-24 h-24 md:w-32 md:h-32 bg-white flex items-center justify-center rounded-lg ">
+                  <img class="w-[50px] h-[70px] md:w-[70px] md:h-[110px]" src="https://clear.bank/uploads/Logos/Tide_2022-05-23-154717_ibot.svg" alt="Tide">
+                </div>
+                <div class="shrink-0 w-24 h-24 md:w-32 md:h-32 bg-white flex items-center justify-center rounded-lg ">
+                  <img class="w-[70px] h-[70px] md:w-[110px] md:h-[110px]" src="https://clear.bank/uploads/Logos/Coinbase-2.svg" alt="Coinbase">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- About  -->
+        <section class="px-6 md:px-8 lg:px-12 mt-8 md:mt-6 lg:mt-12">
+            <p class="text-xl sm:text-2xl md:text-3xl font-normal w-full md:w-[80%] lg:w-[63%]">
+                Financial institutions — from fintechs and digital asset platforms, to banks and credit unions 
+                <span class="text-gray-400">
+                    — use our API to offer their customers fully regulated banking infrastructure and real-time clearing access.
+                </span> 
+                That way the business can grow on your own terms, and stay ahead — at speed.
+            </p>
+        </section>
+        
+        <!-- product -->
+        <section class="px-6 md:px-10 lg:px-14 mt-10 flex flex-col lg:flex-row justify-between font-[SansDisplayRegular]">
+          <!-- Left Section -->
+          <div class="left w-full lg:w-[50%]">
+            <h2 class="text-lg md:text-xl">Our Products</h2>
+            <h2 class="text-2xl md:text-3xl mt-3 py-4 md:py-6">
+              <span id="countingNumber">01</span> - <span class="text-gray-400">03</span>
+            </h2>
+        
+            <!-- Product Links -->
+            <div class="space-y-4">
+              <div class="hov py-2 md:py-3 text-4xl md:text-5xl flex justify-between items-center" onmouseover="changeVideo('accounts', '01')">
+                <a id="accountsLink" class="text-[#ACACAC] hover:text-black transition-colors" href="#">
+                  Accounts
+                </a>
+                <i class="ri-arrow-right-line opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              </div>
+              <div class="hov py-2 md:py-3 text-4xl md:text-5xl flex justify-between items-center" onmouseover="changeVideo('clearing', '02')">
+                <a id="clearingLink" class="text-[#ACACAC] hover:text-black transition-colors" href="#">
+                  Clearing
+                </a>
+                <i class="ri-arrow-right-line opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              </div>
+              <div class="hov py-2 md:py-3 text-4xl md:text-5xl flex justify-between items-center" onmouseover="changeVideo('embedded', '03')">
+                <a id="embeddedLink" class="text-[#ACACAC] hover:text-black transition-colors" href="#">
+                  Embedded Banking
+                </a>
+                <i class="ri-arrow-right-line opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Right Section -->
+          <div class="right w-full lg:w-[45%] bg-gray-200 rounded-3xl mt-8 lg:mt-0">
+            <video
+              id="productVideo"
+              src="https://clear.bank/uploads/assets/CB_Product_Accounts.webm"
+              class="w-full h-auto max-h-[300px] md:max-h-[400px] rounded-t-3xl"
+              autoplay
+              loop
+              muted
+            ></video>
+        
+            <div class="caption p-6">
+              <p class="text-lg md:text-xl">
+                Choose the fully regulated accounts that work best for your business and your customers.
+              </p>
+              <button class="bg-black text-white text-lg md:text-xl px-5 py-3 rounded-full mt-3 hover:bg-[#70f1da] hover:text-black transition">
+                Get Started <i class="ri-arrow-right-line"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- About section Tech -->
+        <section class="px-6 sm:px-10 lg:px-14 mt-20 sm:mt-28 lg:mt-32 font-[SansTextRegular] text-center sm:text-left">
+            <h2 class="text-2xl sm:text-3xl py-4 tracking-tight">Driven by technology</h2>
+            
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl max-w-full sm:max-w-[80%] lg:max-w-[60%] py-2 tracking-tight bg-gradient-to-t from-[#ff87d3] to-[#ff302f] text-transparent bg-clip-text">
+                Be part of the future of banking with our API
+            </h1>
+            
+            <p class="text-lg sm:text-xl lg:text-[22px] max-w-full sm:max-w-[90%] lg:max-w-[73%] py-1 tracking-tight">
+                With our cloud-based API, we offer banking infrastructure so financial institutions can focus on providing the best service for their customers and stay relevant in a fast-paced market.
+            </p>
+            
+            <button class="bg-transparent border border-black text-black text-normal px-6 py-3 rounded-full mt-4 transition duration-300 ease-in-out hover:bg-teal-400 hover:text-white hover:border-none">
+                Explore our API <i class="ri-arrow-right-line"></i>
+            </button>
+        </section>
+        
+       <!-- Powered by People -->
+        <section class="px-6 md:px-10 lg:px-14 mt-16 md:mt-24 flex flex-col md:flex-row justify-between py-6 md:py-8">
+            <!-- Left Image -->
+            <div class="left-img w-full md:w-1/2 py-4">
+                <img class="w-full h-full object-cover rounded-2xl" 
+                     src="https://clear.bank/uploads/images/In-page-images/_1736x1736_crop_center-center_92_none/56685/Powered-by-people-3@2x.webp" 
+                     alt="Powered by people">
+            </div>
+        
+            <!-- Right Text -->
+            <div class="right-text w-full md:w-1/2 lg:w-[45%] leading-[30px] md:leading-[34px] text-center md:text-left mt-6 md:mt-0">
+                <h3 class="text-xl md:text-2xl py-2 tracking-tight">Powered by people</h3>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl py-2 font-bold tracking-tight">Your partner in growth</h1>
+                <p class="text-lg md:text-[23px] py-4">
+                    We understand the pain of dealing with legacy systems, the cost and the risk involved in innovating in the financial services sector. 
+                    That's why we set up ClearBank. We're built to support you. That means no shared propositions, no customer overlap, and no competition. 
+                    Your growth is our growth.
+                </p>
+            </div>
+        </section>
+        
+       <!-- why choose Clear Bank -->
+        <section class="px-6 md:px-14 py-8 flex flex-col md:flex-row justify-between font-[SansDisplayRegular]">
+            <div class="left-text md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl py-2 tracking-tight">Why choose ClearBank</h1>
+                <h3 class="text-2xl md:text-3xl py-3 tracking-tight md:w-[70%] mx-auto md:mx-0">
+                    Financial technology with a banking licence, and expert guidance
+                </h3>
+            </div>
+        
+            <div class="right-text md:w-1/2 mt-8 md:mt-0">
+                <div class="r-part1 flex flex-col items-center md:items-start text-center md:text-left">
+                    <img class="w-[80px] h-[80px] md:w-[100px] md:h-[100px]" src="https://clear.bank/uploads/Icons/5.svg" alt="">
+                    <h1 class="text-3xl md:text-4xl py-3">Cloud-based API</h1>
+                    <p class="text-lg md:text-[21px] w-[90%] md:w-full">
+                        Our cloud-based systems make opening and managing accounts easy and let you clear payments in real-time. 
+                        Bank better, work smarter, and grow faster.
+                    </p>
+                </div>
+        
+                <div class="r-part2 pt-10 flex flex-col items-center md:items-start text-center md:text-left">
+                    <img class="w-[80px] h-[80px] md:w-[100px] md:h-[100px]" src="https://clear.bank/uploads/Icons/PoweredbyPeople.svg" alt="">
+                    <h1 class="text-3xl md:text-4xl py-3">Powered by people</h1>
+                    <p class="text-lg md:text-[21px] w-[90%] md:w-full">
+                        You'll get a dedicated relationship manager who understands your business and knows your industry inside out. 
+                        Backed by a team of specialists, we're always on hand to offer solutions and support.
+                    </p>
+                </div>
+        
+                <div class="r-part3 pt-10 flex flex-col items-center md:items-start text-center md:text-left">
+                    <img class="w-[80px] h-[80px] md:w-[100px] md:h-[100px]" src="https://clear.bank/uploads/Icons/SafeHereTo-Stay.svg" alt="">
+                    <h1 class="text-3xl md:text-4xl py-3">Safe and here to stay</h1>
+                    <p class="text-lg md:text-[20px] w-[90%] md:w-full">
+                        ClearBank is a fully regulated bank in both the United Kingdom and Europe, 
+                        meaning we hold funds securely at the Bank of England and the European Central Bank.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- who we are section -->
+        <section class="px-14 mt-20">
+          <h1 class="text-5xl py-2 font-[SansDisplayRegular]">
+            Who we are working with
+          </h1>
+          <div class="cardNum flex justify-between items-center py-10 text-4xl">
+            <div class="left">
+              <h2>
+                <span class="current">01</span> -
+                <span class="text-gray-400 opacity-20">07</span>
+              </h2>
+            </div>
+            <div class="right flex items-center gap-4">
+              <button class="swiper-button-prev">
+                <i class="ri-arrow-left-line text-gray-400 opacity-20"></i>
+              </button>
+              <button class="swiper-button-next">
+                <i class="ri-arrow-right-line"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+      
+        <!-- card swapier -->
+        <section class="cards px-14 mt-10 w-full font-[SansTextRegular]">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Card 1 -->
+              <div class="swiper-slide">
+                <div
+                  class="h-[400px] p-4 border-[1px] border-gray-400 rounded-3xl hover:bg-[#70f1da] hover:border-none transition-all group"
+                >
+                  <h2 class="text-3xl py-3">Acquirers</h2>
+                  <p class="text-[18px] py-3 pb-32 tracking-tight">
+                    Speeding up settlements for merchants and end customers so
+                    everyone can access their money.
+                  </p>
+                  <button
+                    class="bg-transparent border-black border text-black text-xl px-5 py-3 rounded-full mt-3 flex items-center gap-2 transition-all group-hover:bg-white group-hover:border-none"
+                  >
+                    Learn more <i class="ri-arrow-right-line"></i>
+                  </button>
+                </div>
+              </div>
+    
+              <!-- Card 2 -->
+              <div class="swiper-slide">
+                <div
+                  class="h-[400px] p-4 border-[1px] border-gray-400 rounded-3xl hover:bg-[#70f1da] hover:border-none transition-all group"
+                >
+                  <h2 class="text-3xl py-3">Banks</h2>
+                  <p class="text-[18px] py-3 pb-32 tracking-tight">
+                    Enhancing legacy banking systems with our innovative technology
+                    and expertise <br>in the sector.
+                  </p>
+                  <button
+                    class="bg-transparent border-black border text-black text-xl px-5 py-3 rounded-full mt-3 flex items-center gap-2 transition-all group-hover:bg-white group-hover:border-none"
+                  >
+                    Learn more <i class="ri-arrow-right-line"></i>
+                  </button>
+                </div>
+              </div>
+    
+              <!-- Card 3 -->
+              <div class="swiper-slide">
+                <div
+                  class="h-[400px] p-4 border-[1px] border-gray-400 rounded-3xl hover:bg-[#70f1da] hover:border-none transition-all group"
+                >
+                  <h2 class="text-3xl py-3">Digital assets</h2>
+                  <p class="text-[18px] py-3 pb-32 tracking-tight">
+                    Facilitating real-time, scalable accounts that seamless clear
+                     on and off ramps b/w fiat and crypto.
+                  </p>
+                  <button
+                    class="bg-transparent border-black border text-black text-xl px-5 py-3 rounded-full mt-3 flex items-center gap-2 transition-all group-hover:bg-white group-hover:border-none"
+                  >
+                    Learn more <i class="ri-arrow-right-line"></i>
+                  </button>
+                </div>
+              </div>
+    
+              <!-- Card 4 -->
+              <div class="swiper-slide">
+                <div
+                  class="h-[400px] p-4 border-[1px] border-gray-400 rounded-3xl hover:bg-[#70f1da] hover:border-none transition-all group"
+                >
+                  <h2 class="text-3xl py-3">Fintechs</h2>
+                  <p class="text-[18px] py-3 pb-32 tracking-tight">
+                    Powering the banking infrastructure for fintechs to live up to
+                    customer expectations and keep up with.
+                  </p>
+                  <button
+                    class="bg-transparent border-black border text-black text-xl px-5 py-3 rounded-full mt-3 flex items-center gap-2 transition-all group-hover:bg-white group-hover:border-none"
+                  >
+                    Learn more <i class="ri-arrow-right-line"></i>
+                  </button>
+                </div>
+              </div>
+    
+              <!-- Card 5 -->
+              <div class="swiper-slide">
+                <div
+                  class="h-[400px] p-4 border-[1px] border-gray-400 rounded-3xl hover:bg-[#70f1da] hover:border-none transition-all group"
+                >
+                  <h2 class="text-3xl py-3">Payment Processors</h2>
+                  <p class="text-[18px] py-3 pb-32 tracking-tight">
+                    Streamlining payment processing systems with advanced technology
+                    solutions for faster and more secure.
+                  </p>
+                  <button
+                    class="bg-transparent border-black border text-black text-xl px-5 py-3 rounded-full mt-3 flex items-center gap-2 transition-all group-hover:bg-white group-hover:border-none"
+                  >
+                    Learn more <i class="ri-arrow-right-line"></i>
+                  </button>
+                </div>
+              </div>
+    
+              <!-- Card 6 -->
+              <div class="swiper-slide">
+                <div
+                  class="h-[400px] p-4 border-[1px] border-gray-400 rounded-3xl hover:bg-[#70f1da] hover:border-none transition-all group"
+                >
+                  <h2 class="text-3xl py-3">E-commerce</h2>
+                  <p class="text-[18px] py-3 pb-32 tracking-tight">
+                    Enabling seamless online transactions and providing robust
+                    payment solutions  businesses.
+                  </p>
+                  <button
+                    class="bg-transparent border-black border text-black text-xl px-5 py-3 rounded-full mt-3 flex items-center gap-2 transition-all group-hover:bg-white group-hover:border-none"
+                  >
+                    Learn more <i class="ri-arrow-right-line"></i>
+                  </button>
+                </div>
+              </div>
+    
+              <!-- Card 7 -->
+              <div class="swiper-slide">
+                <div
+                  class="h-[400px] p-4 border-[1px] border-gray-400 rounded-3xl hover:bg-[#70f1da] hover:border-none transition-all group"
+                >
+                  <h2 class="text-3xl py-3">Investment Firms</h2>
+                  <p class="text-[18px] py-3 pb-32 tracking-tight">
+                    Supporting investment operations with advanced financial
+                    technology and real-time data processing.
+                  </p>
+                  <button
+                    class="bg-transparent border-black border text-black text-xl px-5 py-3 rounded-full mt-3 flex items-center gap-2 transition-all group-hover:bg-white group-hover:border-none"
+                  >
+                    Learn more <i class="ri-arrow-right-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      <!-- upper-footer -->
+      <section class="mt-24 w-full h-[280px] md:h-[400px] relative">
+        <img class="w-full h-full object-cover" src="https://clear.bank/uploads/images/In-page-images/_2880x892_crop_center-center_92_none/70523/CTA@2.webp" alt="">
+        <div class="img-text absolute flex flex-col md:flex-row gap-8 md:gap-[200px] top-[50%] translate-y-[-50%] left-[5%] md:left-[10%] translate-x-[0%] w-[90%] md:w-auto">
+            <h1 class="w-full md:w-[40%] text-2xl md:text-4xl">Ready to collaborate?</h1>
+            <div class="right w-full md:w-[50%] text-base md:text-xl">
+                <p>Experience the ClearBank difference and begin your journey today.</p>
+                <button class="bg-black text-white text-base md:text-xl px-4 py-2 rounded-full mt-3 hover:bg-[#70f1da] hover:text-black hover:border-none transition-colors duration-300">Begin <i class="ri-arrow-right-line"></i></button>
+            </div>
+        </div>
+      </section>
+
+      <footer class="px-4 sm:px-8 md:px-16 py-8 sm:py-10 md:py-14 bg-black font-[SansTextRegular]">
+        <div class="fpart1 w-full flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0">
+            <!-- Logo Column -->
+            <div class="col w-full md:w-[21%]">
+              <img class="w-full max-w-[180px] md:max-w-[250px] text-white" src="/logo.svg" alt="" style="filter: invert(100%);">
+            </div>
+    
+            <!-- Products and Use Cases Column -->
+            <div class="col2 w-full md:w-[19%]">
+                <div class="products flex flex-col">
+                    <h3 class="text-lg sm:text-xl text-white py-3">Products</h3>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Accounts</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Clearing</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Embedded banking</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Explore our API</a>
+                </div>
+                <div class="use-case flex flex-col py-6 sm:py-8">
+                    <h3 class="text-lg sm:text-xl text-white py-3">Use Cases</h3>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Acquirers</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Banks</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Building societies and credit unions</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Digital asset platforms</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Fintechs</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Non-bank financial institutions</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Pre-regulated firms</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Partners</a>
+                </div>
+            </div>
+    
+            <!-- About, Learn, Follow Column -->
+            <div class="col3 w-full md:w-[19%]">
+                <div class="about flex flex-col">
+                    <h3 class="text-lg sm:text-xl text-white py-3">About</h3>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Our company</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Join ClearBank</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Regulatory and governance</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Reports and accounts</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Press</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Contact us</a>
+                </div>
+                <div class="learn flex flex-col pt-5">
+                    <h3 class="text-lg sm:text-xl text-white py-3">Learn</h3>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Buyer's guide</a>
+                </div>
+                <div class="follow flex flex-col pt-6">
+                    <h3 class="text-lg sm:text-xl text-white py-3">Follow us</h3>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">LinkedIn</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">X.com</a>
+                </div>
+            </div>
+    
+            <!-- Customer Support and Legal Column -->
+            <div class="col4 w-full md:w-[19%]">
+                <div class="customer-support flex flex-col">
+                    <h3 class="text-lg sm:text-xl text-white py-3">Customer support</h3>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">How to make a complaint</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Fraud and security</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Fscs protection</a>
+                </div>
+                <div class="legal flex flex-col pt-6">
+                    <h3 class="text-lg sm:text-xl text-white py-3">Legal</h3>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Legal</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Data protection and privacy</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">Modern Slavery Statement</a>
+                    <a href="#" class="text-sm sm:text-[15px] text-gray-400 hover:text-teal-400 py-[2px]">BCR commitments</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer Part 2 -->
+        <div class="fpart2 pt-8">
+            <p class="text-xs sm:text-[14px] w-full md:w-[60%] py-2 text-gray-400">Copyright © ClearBank Limited 2024. All rights reserved.</p>
+            <p class="text-xs sm:text-[12.5px] w-full md:w-[60%] py-2 text-gray-400">ClearBank Limited is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority (FRN: 754568). Registered in England and Wales under Company Number 09736376. Registered Address: ClearBank Limited, Borough Yards, 13 Dirty Lane, London, SE1 9PA.</p>
+            <p class="text-xs sm:text-[12.5px] w-full md:w-[60%] py-2 text-gray-400">ClearBank Limited is a subscriber to the <a href="#" class="hover:text-teal-400 decoration-solid">Code of Conduct for Indirect Access Providers</a> in respect of the indirect access services which it provides to its customers.</p>
+            <p class="text-xs sm:text-[12.5px] w-full md:w-[60%] py-2 text-gray-400">ClearBank Europe N.V. is authorised by the European Central Bank and regulated by De Nederlandsche Bank. ClearBank Europe N.V. is registered at the Chamber of Commerce Amsterdam Trade Registry under number 89463366. Registered address: ClearBank Europe N.V., Keizersgracht 391A, 1016 EJ Amsterdam. VAT ID is NL864989829B01.</p>
+            <p class="text-xs sm:text-[12.5px] w-full md:w-[60%] py-2 text-gray-400">ClearBank Group Holdings Limited is a Prudential Regulation Authority approved parent holding company (FRN: 987231). Registered in England and Wales under Company Number 14254435. Registered Address: ClearBank Group Holdings Limited, Borough Yards, 13 Dirty Lane, London, SE1 9PA.</p>
+        </div>
+    </footer>
+    </div>
+   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
+
